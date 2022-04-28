@@ -1,117 +1,91 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 25px;    
-    background-image: url("./Media/Fondos/double-bubble-outline.png");
-
-}
-
-header{
-    background-image: url("./Fondos/puntitos.png");
-    font-size: 15px;
-    text-align: center;
-    padding: 15px;
-    font-family: 'Indie Flower', cursive;
-}
-footer{
-    margin: 20px;
-    line-height: 1.4;
-    padding-top: 10px;
-    background-color: beige;
-}
-
-h1{
-   font-size: 60px;
-}
-
-h2, h3{
-    margin:20px;
-    margin-top:30px;
-    font-weight: bold;
-}
-
-a{
-    text-decoration: none;
-}
-p{
-    text-align: justify;
-}
-
-.menu{
-    width: 100%;
-    font-size: 30px;  
-}
-.menu ul li{
-    border: solid 3px rgb(207, 35, 170);
-    border-radius: 6px;
-    width: 150px;
-    margin: 5px;
-}
-
-.menu li:hover{
-    border: dotted 5px rgb(207, 35, 170);
-    font-weight: bold;
-}
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 /*Clase para acomodar video y párrafo de Intro e Ideas*/
-.intro p{
-    text-align: justify;
-    line-height: 1.5;
-    margin-left: 20px;
-}
-.intro iframe{
-    height:400px;
-    width: 500px;
-    object-fit: fill;
-}
+.intro p {
+  text-align: justify;
+  line-height: 1.5;
+  margin-left: 20px; }
+
+.intro iframe {
+  height: 400px;
+  width: 500px;
+  object-fit: fill; }
 
 /*Mismo formato para img de intro*/
-.imgDeIntro{
-    display: flex;
-    justify-content: center;
-}
-
-.imgDeIntro img{
-    height:400px;
+.imgDeIntro {
+  display: flex;
+  justify-content: center; }
+  .imgDeIntro img {
+    height: 400px;
     width: 400px;
-    object-fit: fill;
-}
+    object-fit: fill; }
+    .imgDeIntro img:hover {
+      opacity: 0.8;
+      width: 390px; }
 
-.imgDeIntro img:hover{
-    opacity: 0.8;
-    width: 390px;
-}
-
+.menu {
+  width: 100%;
+  font-size: 30px; }
+  .menu ul li {
+    border: solid 3px #cf23aa;
+    border-radius: 6px;
+    width: 150px;
+    margin: 5px; }
+    .menu ul li:hover {
+      border: dotted 5px #cf23aa;
+      font-weight: bold; }
 
 /*---PARA EXTERIOR/INTERIOR---*/
-.imgExtInt{
-    display: flex;
-    justify-content: center;
-
-}
-
-.imgExtInt div{
+.imgExtInt {
+  display: flex;
+  justify-content: center; }
+  .imgExtInt div {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
     max-width: fit-content;
-    max-height: fit-content;
-}
+    max-height: fit-content; }
+    .imgExtInt div img {
+      height: 300px;
+      width: 300px;
+      object-fit: fill;
+      /*para que se ajuste al cuadrado*/ }
+      .imgExtInt div img:hover {
+        border: solid 2px;
+        opacity: 0.9; }
 
-.imgExtInt div img{
-    height:300px;
-    width: 300px;
-    object-fit: fill;
-    /*para que se ajuste al cuadrado*/
-}
-.imgExtInt img:hover{
-    border: solid 2px;
-    opacity: 0.9;
-}
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 25px;
+  background-image: url("./Media/Fondos/double-bubble-outline.png"); }
 
+header {
+  background-image: url("./Fondos/puntitos.png");
+  font-size: 15px;
+  text-align: center;
+  padding: 15px;
+  font-family: 'Indie Flower', cursive; }
 
+footer {
+  margin: 20px;
+  line-height: 1.4;
+  padding-top: 10px;
+  background-color: beige; }
+
+h1 {
+  font-size: 60px; }
+
+h2, h3 {
+  margin: 20px;
+  margin-top: 30px;
+  font-weight: bold; }
+
+a {
+  text-decoration: none; }
+
+p {
+  text-align: justify; }

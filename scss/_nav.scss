@@ -1,0 +1,18 @@
+$bordenav: rgb(207, 35, 170);
+
+.menu{
+    width: 100%;
+    font-size: 30px;  
+    ul{
+        li{
+            border: solid 3px $bordenav;
+            border-radius: 6px;
+            width: 150px;
+            margin: 5px;
+            &:hover{
+                border: dotted 5px rgb(207, 35, 170);
+                font-weight: bold;
+            }
+        }
+    }
+}

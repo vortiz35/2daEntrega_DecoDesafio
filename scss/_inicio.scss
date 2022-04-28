@@ -1,0 +1,28 @@
+/*Clase para acomodar video y párrafo de Intro e Ideas*/
+.intro{
+    p{
+        text-align: justify;
+        line-height: 1.5;
+        margin-left: 20px;
+    }
+    iframe{
+        height:400px;
+        width: 500px;
+        object-fit: fill;
+    }  
+}
+
+/*Mismo formato para img de intro*/
+.imgDeIntro{
+    display: flex;
+    justify-content: center;
+    img{
+        height:400px;
+        width: 400px;
+        object-fit: fill;
+        &:hover{
+            opacity: 0.8;
+            width: 390px;
+        }
+    }
+}
