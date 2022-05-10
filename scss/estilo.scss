@@ -3,15 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-@import "inicio";
-@import "nav";
-@import "intext";
 
-body{
-    font-family:'Fira Sans', sans-serif;
-    font-size: 25px;    
-    background-image: url("./Media/Fondos/double-bubble-outline.png");
-}
+@import "nav";
+@import "imgyMedia";
+
+
 header{
     background-image: url("./Fondos/puntitos.png");
     font-size: 15px;
@@ -19,6 +15,13 @@ header{
     padding: 15px;
     font-family: 'Indie Flower', cursive;
 }
+
+body{
+    font-family:'Fira Sans', sans-serif;
+    font-size: 25px;    
+    background-image: url("./Media/Fondos/double-bubble-outline.png");
+}
+
 footer{
     margin: 20px;
     line-height: 1.4;
@@ -35,6 +38,7 @@ h2, h3{
     margin-top:30px;
     font-weight: bold;
 }
+
 a{
     text-decoration: none;
 }

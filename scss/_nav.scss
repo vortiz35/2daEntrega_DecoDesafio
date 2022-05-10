@@ -10,7 +10,7 @@ $bordenav: rgb(207, 35, 170);
             width: 150px;
             margin: 5px;
             &:hover{
-                border: dotted 5px rgb(207, 35, 170);
+                border: dotted 5px $bordenav;
                 font-weight: bold;
             }
         }

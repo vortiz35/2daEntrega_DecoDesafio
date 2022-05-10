@@ -1,0 +1,50 @@
+@mixin formato($alto,$ancho){
+    height: $alto;
+    width: $ancho;
+    object-fit: fill;
+}
+
+/*Clase para acomodar video y párrafo de Intro e Ideas*/
+.intro{
+    p{
+        text-align: justify;
+        line-height: 1.5;
+        margin-left: 20px;
+    }
+    iframe{
+        @include formato(400px,500px);
+    }  
+}
+
+/*Mismo formato para img de intro*/
+.imgDeIntro{
+    display: flex;
+    justify-content: center;
+    img{
+        @include formato(400px,400px);
+        &:hover{
+            opacity: 0.8;
+            width: 390px;
+        }
+    }
+}
+
+/*---PARA EXTERIOR/INTERIOR---*/
+.imgExtInt{
+    display: flex;
+    justify-content: center;
+    div{
+        @extend .imgExtInt;
+        margin-bottom: 10px;
+        max-width: fit-content;
+        max-height: fit-content;
+        img{
+            @include formato(300px,300px);
+            
+            &:hover{
+                border: solid 2px;
+                opacity: 0.9;
+            }
+        }
+    }
+}
